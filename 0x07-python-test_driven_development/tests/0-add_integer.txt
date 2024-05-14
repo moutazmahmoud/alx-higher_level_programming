@@ -51,3 +51,9 @@ ValueError: cannot convert float NaN to integer
 >>> add_integer(34, 54, 67)
 Traceback (most recent call last):
 TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+>>> add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+
