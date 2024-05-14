@@ -1,7 +1,17 @@
 #!/usr/bin/python3
 
 """
-    Add Interger Task
+    Adds two integers.
+
+    Parameters:
+    a (int, float): The first number to add.
+    b (int, float, optional): The second number to add. Defaults to 98.
+
+    Returns:
+    int: The sum of a and b, casted to integers if they are floats.
+
+    Raises:
+    TypeError: If a or b are not integers or floats.
 """
 
 def add_integer(a, b=98):
@@ -14,7 +24,8 @@ def add_integer(a, b=98):
     if not isinstance(b, (int, float)):
         raise TypeError("b must be an integer")
 
-    a = int(a)
-    b = int(b)
-
+    if isinstance(a, float):
+        a = int(a)
+    if isinstance(b, float):
+        b = int(b)
     return a + b
