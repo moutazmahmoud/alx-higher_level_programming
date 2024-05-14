@@ -6,6 +6,12 @@
 
 def add_integer(a, b=98):
     """
-    Adding function
+    >>> add_integer(3,6)
+    9
     """
-    return a + b
+    if type(a) not in [int, float]:
+        raise TypeError("a must be an integer")
+    elif type(b) not in [int, float]:
+        raise TypeError("b must be an integer")
+    else:
+        return a + b
