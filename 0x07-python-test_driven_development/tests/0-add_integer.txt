@@ -5,3 +5,9 @@
 
 >>> add_integer(2, 7)
 9
+
+>>> add_integer(-2, 2)
+0
+
+>>> add_integer(-2)
+96
